@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shree Jagannath Medicos — Wholesale &amp; Retail Pharmacy in Delhi</title>
+  <meta name="description" content="Genuine medicines, orthopaedic support and daily wellness essentials from a trusted Delhi chemist — GST invoices, same-day dispatch and a pharmacist who actually picks up the phone.">
+
+  <!-- Vendor CSS (all local) -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <!-- Theme -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231e6ae1'/><rect x='26' y='14' width='12' height='36' rx='5' fill='white'/><rect x='14' y='26' width='36' height='12' rx='5' fill='white'/></svg>">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavList" data-bs-offset="180">
+
+  <!-- ================================================================
+       TOP BAR  (ref: image-1 top strip)
+  ================================================================= -->
+  <div class="topbar d-none d-lg-block">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between gap-3">
+        <div class="topbar-item"><i class="fa-solid fa-truck-fast"></i> Free delivery on orders over ₹49</div>
+        <div class="topbar-sep"></div>
+        <div class="topbar-item"><i class="fa-solid fa-tag"></i> Use code <b class="ms-1">FIRST10</b> for 10% off</div>
+        <div class="topbar-sep"></div>
+        <div class="topbar-item"><i class="fa-solid fa-shield-halved"></i> 100% Genuine Medicines</div>
+        <div class="topbar-sep"></div>
+        <div class="topbar-item"><i class="fa-solid fa-headset"></i> 24/7 Pharmacist Support</div>
+        <div class="topbar-sep"></div>
+        <div class="topbar-item"><i class="fa-solid fa-location-dot"></i> New Delhi, Delhi</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       HEADER — logo + search + call/quote  (no account, no cart)
+  ================================================================= -->
+  <header class="site-header" id="home">
+    <div class="container">
+      <div class="d-flex align-items-center gap-3 gap-xl-4 py-3">
+        <!-- Brand -->
+        <a href="#home" class="brand flex-shrink-0">
+          <span class="brand-logo"><i class="fa-solid fa-plus"></i></span>
+          <span>
+            <span class="brand-name d-block">Shree Jagannath <span>Medicos</span></span>
+            <span class="brand-tag d-block">Wholesale &amp; Retail &middot; Since 2020</span>
+          </span>
+        </a>
+
+        <!-- Search -->
+        <form class="header-search flex-grow-1 d-none d-lg-flex" id="searchForm" role="search">
+          <select class="form-select" aria-label="Product category">
+            <option selected>All Categories</option>
+            <option>Pharmaceutical Tablets</option>
+            <option>Pharmaceutical Capsules</option>
+            <option>Pharmaceutical Cream</option>
+            <option>Knee Support</option>
+            <option>Body Sprays</option>
+            <option>Blood Pressure Machine</option>
+            <option>Bath Soaps</option>
+          </select>
+          <input class="form-control" type="search" placeholder="Search medicines, health products…" aria-label="Search">
+          <button class="btn btn-primary px-4" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i>Search</button>
+        </form>
+
+        <!-- Call + quote (replaces account / cart) -->
+        <div class="ms-auto d-flex align-items-center gap-3 gap-xl-4">
+          <a href="tel:+917949082435" class="header-phone d-none d-md-flex">
+            <span class="icon"><i class="fa-solid fa-phone-volume"></i></span>
+            <span>
+              <small>Talk to a Pharmacist</small>
+              <strong>+91 79490 82435</strong>
+            </span>
+          </a>
+          <a href="#contact" class="btn btn-primary d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="fa-solid fa-file-invoice"></i> Get a Quote
+          </a>
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                  aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav row (kept outside <header> so position:sticky works page-wide) -->
+  <div class="header-nav is-sticky" id="headerNav">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-0 main-nav">
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto" id="mainNavList">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#categories" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Category</a>
+                <div class="dropdown-menu category-menu">
+                  <div class="row g-1">
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-tablets"></i> Pharmaceutical Tablets</a></div>
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-pills"></i> Pharmaceutical Capsules</a></div>
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-pump-soap"></i> Pharmaceutical Cream</a></div>
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-bandage"></i> Knee Support</a></div>
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-spray-can"></i> Body Spray</a></div>
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-heart-pulse"></i> Blood Pressure Machine</a></div>
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-soap"></i> Bath Soaps</a></div>
+                    <div class="col-6"><a class="cat-link" href="#categories"><i class="fa-solid fa-grip"></i> View All Categories</a></div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+              <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+            <!-- Mobile-only search & call -->
+            <div class="d-lg-none pb-3">
+              <form class="header-search mb-3" id="searchFormMobile" role="search">
+                <select class="form-select" aria-label="Product category">
+                  <option selected>All Categories</option>
+                  <option>Pharmaceutical Tablets</option>
+                  <option>Pharmaceutical Capsules</option>
+                  <option>Pharmaceutical Cream</option>
+                  <option>Knee Support</option>
+                </select>
+                <input class="form-control" type="search" placeholder="Search medicines…" aria-label="Search">
+                <button class="btn btn-primary px-3" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+              <div class="d-grid gap-2">
+                <a href="tel:+917949082435" class="btn btn-outline-primary"><i class="fa-solid fa-phone-volume me-2"></i>+91 79490 82435</a>
+                <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-file-invoice me-2"></i>Get a Quote</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+  </div>
+
+  <!-- ================================================================
+       HERO  (ref: image-1)
+  ================================================================= -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-reveal>
+          <span class="hero-badge"><i class="fa-solid fa-heart-pulse"></i> Licensed Wholesale &amp; Retail Pharmacy &middot; New Delhi</span>
+          <h1>Your health,<br><span class="accent">dispensed with care.</span></h1>
+          <p class="hero-text">Genuine medicines, orthopaedic support and daily wellness essentials from a trusted
+            Delhi chemist — with GST invoices, same-day dispatch and a pharmacist who actually picks up the phone.</p>
+
+          <div class="hero-features">
+            <div class="hero-feature">
+              <i class="fa-solid fa-user-doctor"></i>
+              <span><b>Prescription verified</b><small>Checked by our pharmacist</small></span>
+            </div>
+            <div class="hero-feature">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span><b>Same-day delivery</b><small>Across Delhi NCR</small></span>
+            </div>
+            <div class="hero-feature">
+              <i class="fa-solid fa-star"></i>
+              <span><b>4.9 / 5 rating</b><small>From 800+ reviews</small></span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#categories" class="btn btn-primary btn-lg">Browse Categories <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            <a href="#contact" class="btn btn-outline-primary btn-lg"><i class="fa-solid fa-file-invoice me-2"></i>Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-reveal>
+          <div class="hero-media">
+            <div class="offer-sticker">
+              <div>
+                <span>Up to</span>
+                <b>20%</b>
+                <b style="font-size:1.15rem">OFF</b>
+                <small>on selected medicines</small>
+              </div>
+            </div>
+            <!-- Demo hero image — replace with your own photo later -->
+            <img src="assets/img/pages/hero.svg" alt="Medicines and wellness essentials" class="img-fluid hero-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CATEGORY COMPONENT  (homepage category strip, ref: image-1 bottom)
+  ================================================================= -->
+  <div class="container" id="categories">
+    <div class="category-strip" data-reveal>
+      <div class="row row-cols-4 g-2 g-md-0 cat-row">
+        <div class="col">
+          <a href="#products" class="cat-item">
+            <span class="cat-icon"><i class="fa-solid fa-tablets"></i></span>
+            <b>Pharmaceutical Tablets</b><small>10 Products</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#products" class="cat-item">
+            <span class="cat-icon"><i class="fa-solid fa-pills"></i></span>
+            <b>Pharmaceutical Capsules</b><small>6 Products</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#products" class="cat-item">
+            <span class="cat-icon"><i class="fa-solid fa-pump-soap"></i></span>
+            <b>Pharmaceutical Cream</b><small>7 Products</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#products" class="cat-item">
+            <span class="cat-icon"><i class="fa-solid fa-bandage"></i></span>
+            <b>Knee Support</b><small>6 Products</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#products" class="cat-item">
+            <span class="cat-icon"><i class="fa-solid fa-spray-can"></i></span>
+            <b>Body Sprays</b><small>3 Products</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#products" class="cat-item">
+            <span class="cat-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+            <b>BP Machines</b><small>3 Products</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#products" class="cat-item">
+            <span class="cat-icon"><i class="fa-solid fa-soap"></i></span>
+            <b>Bath Soaps</b><small>3 Products</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#products" class="cat-item cat-all">
+            <span class="cat-icon"><i class="fa-solid fa-arrow-right-long"></i></span>
+            <b>View All Categories</b>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================
+       TOP SERVICES  (ref: image-2)
+  ================================================================= -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head text-center" data-reveal>
+        <h2>Top Services For You</h2>
+        <div class="head-bar"></div>
+        <p class="lead-sub">Everything a neighbourhood chemist should be — only faster, genuine and always reachable.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3" data-reveal>
+          <div class="service-card">
+            <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Fast Delivery</h3>
+            <p>Same-day dispatch across Delhi NCR on orders placed before 6 PM.</p>
+            <a href="#contact" class="go" aria-label="Fast delivery"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3" data-reveal>
+          <div class="service-card">
+            <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>100% Genuine</h3>
+            <p>Sourced from licensed makers with GST invoices on every order.</p>
+            <a href="#about" class="go" aria-label="Genuine products"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3" data-reveal>
+          <div class="service-card">
+            <div class="icon"><i class="fa-solid fa-user-doctor"></i></div>
+            <h3>Expert Pharmacists</h3>
+            <p>Free advice and prescription checks on our 24/7 helpline.</p>
+            <a href="tel:+917949082435" class="go" aria-label="Talk to a pharmacist"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3" data-reveal>
+          <div class="service-card">
+            <div class="icon"><i class="fa-solid fa-rotate-left"></i></div>
+            <h3>Easy Returns</h3>
+            <p>7-day return policy and secure, transparent payments.</p>
+            <a href="#contact" class="go" aria-label="Easy returns"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       TRENDING PRODUCTS — SWIPER  (ref: image-2)
+  ================================================================= -->
+  <section class="section bg-surface pt-0" id="products">
+    <div class="container">
+      <div class="section-head text-center" data-reveal>
+        <h2>Trending Health Products</h2>
+        <div class="head-bar"></div>
+        <p class="lead-sub">Hand-picked bestsellers from our shelves this week.</p>
+      </div>
+
+      <div class="position-relative" data-reveal>
+        <div class="swiper products-swiper" id="trendingSwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <span class="product-flag flag-rx">Rx</span>
+                  <img src="assets/img/products/tab-1.svg" alt="Alpha Ketozox Tablets" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Alpha Ketozox Ketoanalogues Essential Amino Acid Tablets</a></h3>
+                  <p class="product-sub">Ketoanalogues &amp; amino acids</p>
+                  <div class="product-price"><span class="now">₹410</span><span class="unit">/ Strip</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <span class="product-flag flag-best">Bestseller</span>
+                  <img src="assets/img/products/tab-2.svg" alt="Fericip XT Tablet" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Fericip XT Ferrous Ascorbate Folic Acid Tablet</a></h3>
+                  <p class="product-sub">Iron &amp; folic acid supplement</p>
+                  <div class="product-price"><span class="now">₹367</span><span class="unit">/ Strip</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <img src="assets/img/products/tab-3.svg" alt="Cipcal 500 Tablets" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Cipcal 500 Calcium Vitamin D3 Tablets IP</a></h3>
+                  <p class="product-sub">Calcium &amp; vitamin D3</p>
+                  <div class="product-price"><span class="now">₹96.15</span><span class="unit">/ Box</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <span class="product-flag flag-best">Bestseller</span>
+                  <img src="assets/img/products/cap-1.svg" alt="Mecofol Plus Capsules" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Mecofol Plus Capsules</a></h3>
+                  <p class="product-sub">Methylcobalamin blend</p>
+                  <div class="product-price"><span class="now">₹208</span><span class="unit">/ Box</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <span class="product-flag flag-best">Bestseller</span>
+                  <img src="assets/img/products/cap-2.svg" alt="Itromed 100 Capsules" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Itromed 100 Itraconazole Capsules</a></h3>
+                  <p class="product-sub">Antifungal capsules</p>
+                  <div class="product-price"><span class="now">₹1,860</span><span class="unit">/ Box</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <span class="product-flag flag-best">Bestseller</span>
+                  <img src="assets/img/products/cream-1.svg" alt="Luliford Cream" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Luliford Luliconazole Cream IP</a></h3>
+                  <p class="product-sub">Topical antifungal cream</p>
+                  <div class="product-price"><span class="now">₹250</span><span class="unit">/ Box</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <img src="assets/img/products/knee-1.svg" alt="Flamingo Knee Splint" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Flamingo Knee Splints</a></h3>
+                  <p class="product-sub">Adjustable patellar support</p>
+                  <div class="product-price"><span class="now">₹200</span><span class="unit">/ Piece</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="product-media">
+                  <span class="product-flag flag-best">Bestseller</span>
+                  <img src="assets/img/products/bp-1.svg" alt="Omron Blood Pressure Monitor" loading="lazy">
+                </div>
+                <div class="product-body">
+                  <h3 class="product-title"><a href="#contact">Omron HEM-7121J Upper Arm Blood Pressure Monitor</a></h3>
+                  <p class="product-sub">Digital BP monitor</p>
+                  <div class="product-price"><span class="now">₹2,470</span><span class="unit">/ Piece</span></div>
+                  <a href="tel:+917949082435" class="btn btn-outline-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire Now</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <button class="swiper-nav-btn swiper-prev" id="trendingPrev" aria-label="Previous products"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="swiper-nav-btn swiper-next" id="trendingNext" aria-label="Next products"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div class="text-center mt-2" data-reveal>
+        <a href="#bestselling" class="btn btn-primary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PROMO BANNERS  (ref: image-2 bottom grid)
+  ================================================================= -->
+  <section class="section bg-surface pt-0">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5" data-reveal>
+          <div class="promo-card promo-solid" style="min-height:290px">
+            <span class="promo-pill">Limited-time offer</span>
+            <h3>Up to 20% Off</h3>
+            <p>Exclusive savings on selected medicines, devices and daily wellness products. Talk to our team about current deals.</p>
+            <a href="tel:+917949082435" class="btn btn-light mt-auto"><i class="fa-solid fa-phone-volume me-2"></i>Talk to Our Team</a>
+            <img src="assets/img/products/tab-4.svg" alt="" class="promo-img" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex flex-column gap-4" data-reveal>
+          <div class="promo-card promo-tint flex-grow-1">
+            <span class="promo-pill" style="background:var(--clr-accent)">Ortho range</span>
+            <h3>Knee Support &amp; Pain Care</h3>
+            <p class="mb-2">Braces, splints, heel cushions &amp; pain relief.</p>
+            <a href="#products" class="btn btn-primary btn-sm mt-auto">Explore</a>
+            <img src="assets/img/products/knee-2.svg" alt="" class="promo-img" loading="lazy">
+          </div>
+          <div class="promo-card promo-tint flex-grow-1">
+            <span class="promo-pill" style="background:var(--clr-accent)">Skin &amp; personal care</span>
+            <h3>Creams, Soaps &amp; More</h3>
+            <p class="mb-2">Medicated creams and dermatologist-trusted soaps.</p>
+            <a href="#products" class="btn btn-primary btn-sm mt-auto">Explore</a>
+            <img src="assets/img/products/cream-2.svg" alt="" class="promo-img" loading="lazy">
+          </div>
+        </div>
+        <div class="col-lg-3" data-reveal>
+          <div class="promo-card promo-accent" style="min-height:290px">
+            <span class="promo-pill" style="background:var(--clr-primary)">Save more</span>
+            <h3>Bulk &amp; Wholesale</h3>
+            <p>Special wholesale rates for chemists, clinics &amp; hospitals on bulk orders.</p>
+            <a href="#contact" class="btn btn-primary btn-sm mt-auto">Request Bulk Pricing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       BEST SELLING PRODUCTS  (ref: image-3)
+  ================================================================= -->
+  <section class="section" id="bestselling">
+    <div class="container">
+      <div class="section-head d-flex align-items-end justify-content-between flex-wrap gap-3" data-reveal>
+        <div>
+          <h2>Best Selling Products</h2>
+          <div class="head-bar"></div>
+        </div>
+        <a href="#products" class="btn btn-outline-primary">View All Products <i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+
+      <div class="row g-3 g-xl-2">
+        <div class="col-6 col-md-4 col-xl-2" data-reveal>
+          <div class="product-card">
+            <div class="product-media"><img src="assets/img/products/cream-2.svg" alt="Clobenate GM Cream" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-title"><a href="#contact">Clobenate GM Cream</a></h3>
+              <p class="product-sub">Clobetasol, neomycin &amp; miconazole</p>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                4.8 (1.2K)
+              </div>
+              <div class="product-price">
+                <span class="now">₹84</span><span class="was">₹105</span><span class="off">20% OFF</span>
+              </div>
+              <a href="tel:+917949082435" class="btn btn-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-2" data-reveal>
+          <div class="product-card">
+            <div class="product-media"><img src="assets/img/products/tab-4.svg" alt="Tinfal Forte Tablet" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-title"><a href="#contact">Tinfal Forte Tablet</a></h3>
+              <p class="product-sub">Nutritional supplement</p>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                4.7 (860)
+              </div>
+              <div class="product-price">
+                <span class="now">₹1,350</span><span class="was">₹1,650</span><span class="off">18% OFF</span>
+              </div>
+              <a href="tel:+917949082435" class="btn btn-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-2" data-reveal>
+          <div class="product-card">
+            <div class="product-media"><img src="assets/img/products/spray-1.svg" alt="Spice Perfume Body Spray" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-title"><a href="#contact">Spice Perfume Body Spray</a></h3>
+              <p class="product-sub">Long-lasting body spray</p>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                4.6 (540)
+              </div>
+              <div class="product-price">
+                <span class="now">₹220</span><span class="was">₹260</span><span class="off">15% OFF</span>
+              </div>
+              <a href="tel:+917949082435" class="btn btn-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-2" data-reveal>
+          <div class="product-card">
+            <div class="product-media"><img src="assets/img/products/knee-2.svg" alt="Black Knee Support" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-title"><a href="#contact">Black Knee Support</a></h3>
+              <p class="product-sub">Compression knee brace</p>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                4.7 (430)
+              </div>
+              <div class="product-price">
+                <span class="now">₹230</span><span class="was">₹280</span><span class="off">18% OFF</span>
+              </div>
+              <a href="tel:+917949082435" class="btn btn-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-2" data-reveal>
+          <div class="product-card">
+            <div class="product-media"><img src="assets/img/products/soap-1.svg" alt="Alite Acne Pimple Soap" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-title"><a href="#contact">Alite Acne Pimple Soap</a></h3>
+              <p class="product-sub">Medicated skincare soap</p>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                4.6 (720)
+              </div>
+              <div class="product-price">
+                <span class="now">₹75</span><span class="was">₹95</span><span class="off">21% OFF</span>
+              </div>
+              <a href="tel:+917949082435" class="btn btn-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-xl-2" data-reveal>
+          <div class="product-card">
+            <div class="product-media"><img src="assets/img/products/bp-2.svg" alt="Dr Morepen BP Monitor" loading="lazy"></div>
+            <div class="product-body">
+              <h3 class="product-title"><a href="#contact">Dr Morepen Digital Blood Pressure Machine</a></h3>
+              <p class="product-sub">Digital BP monitor</p>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                4.8 (310)
+              </div>
+              <div class="product-price">
+                <span class="now">₹1,400</span><span class="was">₹1,750</span><span class="off">20% OFF</span>
+              </div>
+              <a href="tel:+917949082435" class="btn btn-primary btn-sm w-100"><i class="fa-solid fa-phone-volume me-1"></i> Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Assurance bar (ref: image-3 bottom strip) -->
+      <div class="assurance-bar mt-5" data-reveal>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3">
+          <div class="col">
+            <div class="assurance-item">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span><b>Free Delivery</b><small>On orders over ₹49</small></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="assurance-item">
+              <i class="fa-solid fa-rotate-left"></i>
+              <span><b>Easy Returns</b><small>7-day return policy</small></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="assurance-item">
+              <i class="fa-solid fa-lock"></i>
+              <span><b>Secure Payments</b><small>GST invoice &amp; safe checkout</small></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="assurance-item">
+              <i class="fa-solid fa-tag"></i>
+              <span><b>Best Prices</b><small>Wholesale &amp; retail rates</small></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="assurance-item">
+              <i class="fa-solid fa-headset"></i>
+              <span><b>24/7 Support</b><small>Pharmacist helpline</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       SHOP BY CONCERN
+  ================================================================= -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-head text-center" data-reveal>
+        <span class="kicker">// Shop by sickness</span>
+        <h2>Find the Healthcare Products You Need</h2>
+        <div class="head-bar"></div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-4 g-3 g-lg-4">
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-droplet"></i></span><b>Diabetes Care</b><small>Meters, strips &amp; sugar-free</small></div></div>
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-heart-pulse"></i></span><b>Heart Health</b><small>BP monitors &amp; cardio support</small></div></div>
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-temperature-half"></i></span><b>Cold &amp; Fever</b><small>Relief for cough, flu &amp; fever</small></div></div>
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-bone"></i></span><b>Bone &amp; Joint</b><small>Calcium, braces &amp; pain relief</small></div></div>
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-venus"></i></span><b>Women's Health</b><small>Prenatal, PCOS &amp; wellness</small></div></div>
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-baby"></i></span><b>Kids Health</b><small>Syrups, vitamins &amp; baby care</small></div></div>
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-brain"></i></span><b>Brain &amp; Sleep</b><small>Stress, focus &amp; sleep aids</small></div></div>
+        <div class="col" data-reveal><div class="concern-tile"><span class="icon"><i class="fa-solid fa-shield-virus"></i></span><b>Immunity</b><small>Vitamin C, zinc &amp; boosters</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CUSTOMER REVIEWS — SWIPER
+  ================================================================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head text-center" data-reveal>
+        <span class="kicker">// Customer reviews</span>
+        <h2>What Our Clients Say</h2>
+        <div class="head-bar"></div>
+      </div>
+      <div class="swiper reviews-swiper" id="reviewsSwiper" data-reveal>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review-card">
+              <i class="fa-solid fa-quote-left quote"></i>
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>Shree Jagannath Medicos offers a great range of healthcare products with helpful service, reasonable pricing, and a smooth experience for customers seeking medical essentials.</p>
+              <div class="who"><span class="avatar">SV</span><span><b>Sunil Verma</b><small>Verified customer · New Delhi</small></span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <i class="fa-solid fa-quote-left quote"></i>
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>I appreciate the product variety and professional support at Shree Jagannath Medicos. Their commitment to customer satisfaction makes purchasing healthcare essentials convenient and reassuring.</p>
+              <div class="who"><span class="avatar">RT</span><span><b>Rajat Tygai</b><small>Verified customer · New Delhi</small></span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <i class="fa-solid fa-quote-left quote"></i>
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>The staff at Shree Jagannath Medicos are courteous, knowledgeable, and always ready to help. Finding the right healthcare products feels simple and comfortable.</p>
+              <div class="who"><span class="avatar">GK</span><span><b>Gourav Kumar</b><small>Verified customer · New Delhi</small></span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <i class="fa-solid fa-quote-left quote"></i>
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>My experience with Shree Jagannath Medicos has been positive. Their organized product selection, responsive assistance, and customer-friendly approach make healthcare shopping more convenient.</p>
+              <div class="who"><span class="avatar">MT</span><span><b>Monoj Tiwari</b><small>Verified customer · New Delhi</small></span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <i class="fa-solid fa-quote-left quote"></i>
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>Shree Jagannath Medicos provides helpful customer support and a good selection of medical essentials. Their professional approach makes every interaction pleasant and straightforward.</p>
+              <div class="who"><span class="avatar">RS</span><span><b>Rohit Singh</b><small>Verified customer · New Delhi</small></span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <i class="fa-solid fa-quote-left quote"></i>
+              <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+              <p>I value the convenient service at Shree Jagannath Medicos. Their helpful team and wide range of healthcare essentials create a smooth shopping experience.</p>
+              <div class="who"><span class="avatar">DS</span><span><b>Danish Saifi</b><small>Verified customer · New Delhi</small></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       WHY CHOOSE US  (ref: image-4 top)
+  ================================================================= -->
+  <section class="section bg-surface" id="about">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5" data-reveal>
+          <div class="about-media">
+            <!-- Demo store image — replace with your own photo later -->
+            <img src="assets/img/pages/store.svg" alt="Shree Jagannath Medicos store">
+            <div class="mission-card">
+              <div class="head"><i class="fa-solid fa-bullseye"></i> Our Mission</div>
+              <p>Genuine medicines, fair prices and pharmacist guidance for every family we serve.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-reveal>
+          <h2 style="font-size:clamp(1.5rem,1.2rem+1.2vw,2.1rem);letter-spacing:-.02em">
+            Why Choose <span class="text-primary">Shree Jagannath Medicos</span>?
+          </h2>
+          <p class="mt-3 mb-0">Since 2020, under the leadership of proprietor Jagannath, we have built a strong reputation
+            as a dependable wholesale and retail trader in New Delhi — serving chemists, clinics, hospitals and families
+            with authentic products and transparent trading practices.</p>
+          <ul class="why-list">
+            <li><i class="fa-solid fa-circle-check"></i> Wide range of pharmaceutical products</li>
+            <li><i class="fa-solid fa-circle-check"></i> Quality-focused healthcare essentials</li>
+            <li><i class="fa-solid fa-circle-check"></i> Medical devices &amp; healthcare supplies</li>
+            <li><i class="fa-solid fa-circle-check"></i> Professional &amp; customer-friendly support</li>
+            <li><i class="fa-solid fa-circle-check"></i> Dedicated assistance for bulk enquiries</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-primary">Learn More About Us <i class="fa-solid fa-arrow-right ms-2"></i></a>
+        </div>
+        <div class="col-lg-3" data-reveal>
+          <div class="emergency-card">
+            <h3>Need Medicines Urgently?</h3>
+            <p>Our pharmacist picks up the phone 24/7. Order on call for same-day dispatch across Delhi NCR.</p>
+            <a href="tel:+917949082435" class="btn btn-light"><i class="fa-solid fa-phone-volume me-2"></i>+91 79490 82435</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       BLOG  (ref: image-4 "Health Tips & News")
+  ================================================================= -->
+  <section class="section bg-surface pt-0" id="blog">
+    <div class="container">
+      <div class="section-head d-flex align-items-end justify-content-between flex-wrap gap-3" data-reveal>
+        <div>
+          <h2>Health Tips &amp; News</h2>
+          <div class="head-bar"></div>
+          <p class="lead-sub">Stay updated with the latest health tips and news.</p>
+        </div>
+        <a href="#blog" class="btn btn-outline-primary">View All Articles <i class="fa-solid fa-arrow-right ms-2"></i></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4" data-reveal>
+          <article class="blog-card">
+            <img src="assets/img/pages/blog-1.svg" alt="Medicine safety blog" class="thumb" loading="lazy">
+            <div class="body">
+              <span class="blog-pill">Medication Safety</span>
+              <h3><a href="#blog">How to Use and Store Medicines Safely at Home</a></h3>
+              <span class="meta"><i class="fa-regular fa-calendar"></i> April 10, 2026 &middot; 6 min read</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-xl-4" data-reveal>
+          <article class="blog-card">
+            <img src="assets/img/pages/blog-2.svg" alt="Nutrition blog" class="thumb" loading="lazy">
+            <div class="body">
+              <span class="blog-pill">Nutrition</span>
+              <h3><a href="#blog">Essential Medical Products Every Home Should Have</a></h3>
+              <span class="meta"><i class="fa-regular fa-calendar"></i> April 08, 2026 &middot; 5 min read</span>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-xl-4" data-reveal>
+          <article class="blog-card">
+            <img src="assets/img/pages/blog-3.svg" alt="Cold and flu blog" class="thumb" loading="lazy">
+            <div class="body">
+              <span class="blog-pill">Cold &amp; Flu</span>
+              <h3><a href="#blog">Cold &amp; Flu Season: What to Keep in Your Medicine Cabinet</a></h3>
+              <span class="meta"><i class="fa-regular fa-calendar"></i> April 05, 2026 &middot; 4 min read</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CTA banner (ref: image-4 teal band) -->
+      <div class="cta-banner mt-5" data-reveal>
+        <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-4 position-relative" style="z-index:1">
+          <div class="icon-box"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="flex-grow-1">
+            <h2>Your Health is Our Priority</h2>
+            <p>Let us take care of you and your family with genuine medicines, GST invoices and same-day delivery across Delhi NCR.</p>
+          </div>
+          <a href="#contact" class="btn btn-light btn-lg flex-shrink-0">Get a Quote Now <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          <div class="end-icon d-none d-xl-grid"><i class="fa-solid fa-user-doctor"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       CONTACT — PHONE BAND (final section with contact number)
+  ================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-band" data-reveal>
+        <div class="phone-icon"><i class="fa-solid fa-phone-volume"></i></div>
+        <span class="kicker d-block" style="color:var(--clr-primary);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem">24/7 Pharmacist Helpline</span>
+        <h2 class="mt-2 mb-1" style="font-size:clamp(1.6rem,1.2rem+1.6vw,2.4rem);font-weight:800">Need Help? Call Us Now</h2>
+        <a href="tel:+917949082435" class="tel-big">+91 79490 82435</a>
+        <p class="text-muted mt-2 mb-4">Same-day delivery across Delhi NCR &middot; Wholesale &amp; retail enquiries welcome</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+          <a href="tel:+917949082435" class="btn btn-primary btn-lg"><i class="fa-solid fa-phone me-2"></i>Call Now</a>
+          <a href="mailto:shreejagannathmedicos@gmail.com" class="btn btn-outline-primary btn-lg"><i class="fa-solid fa-envelope me-2"></i>Email Us</a>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-reveal>
+          <div class="contact-card">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <b>Call Us</b>
+            <p><a href="tel:+917949082435">+91 79490 82435</a></p>
+            <p class="text-muted">Mon–Sun &middot; Open all days</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-reveal>
+          <div class="contact-card">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <b>Visit Us</b>
+            <p>A1387/3, Ground Floor, Main Vikas Marg, Delhi 110092</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-reveal>
+          <div class="contact-card">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <b>Email Us</b>
+            <p><a href="mailto:shreejagannathmedicos@gmail.com">shreejagannathmedicos@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       FOOTER
+  ================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 py-5">
+        <div class="col-lg-4">
+          <a href="#home" class="brand mb-3 d-inline-flex">
+            <span class="brand-logo"><i class="fa-solid fa-plus"></i></span>
+            <span>
+              <span class="brand-name d-block">Shree Jagannath <span style="color:var(--clr-primary)">Medicos</span></span>
+              <span class="brand-tag d-block" style="color:#8fa2bd">Medicos &middot; Since 2020</span>
+            </span>
+          </a>
+          <p class="mt-3">Incepted in the year 2020, Shree Jagannath Medicos is a distinguished wholesale trader offering
+            an enormous consignment of pharmaceutical cream, pharmaceutical tablets, surgicals, anticancer,
+            superspeciality, critical care and all ophthalmic divisions.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Useful Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5>Popular Categories</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#categories">Pharmaceutical Tablets</a></li>
+            <li><a href="#categories">Pharmaceutical Capsules</a></li>
+            <li><a href="#categories">Pharmaceutical Cream</a></li>
+            <li><a href="#categories">Knee Support</a></li>
+            <li><a href="#categories">Body Spray</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Get in Touch</h5>
+          <div class="contact-line"><i class="fa-solid fa-location-dot"></i><span>A1387/3, Ground Floor, Main Vikas Marg, Delhi 110092</span></div>
+          <div class="contact-line"><i class="fa-solid fa-phone"></i><a href="tel:+917949082435">+91 79490 82435</a></div>
+          <div class="contact-line"><i class="fa-solid fa-envelope"></i><a href="mailto:shreejagannathmedicos@gmail.com">shreejagannathmedicos@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>&copy; <span id="year"></span> <b style="color:#fff">Shree Jagannath Medicos</b>. All Rights Reserved.</span>
+        <span>Designed by Sriram Soft Solutions Pvt. Ltd.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Vendor JS (all local) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

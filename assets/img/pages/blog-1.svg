@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="Demo blog image">
+<rect width="640" height="440" rx="28" fill="#eaf2fe"/><circle cx="540" cy="80" r="60" fill="#dbe9fd"/>
+<path d="M320 80 l150 54 v110 c0 92 -66 148 -150 176 c-84 -28 -150 -84 -150 -176 v-110 Z" fill="#2f7ae5"/>
+<rect x="298" y="150" width="44" height="120" rx="12" fill="#ffffff"/><rect x="260" y="188" width="120" height="44" rx="12" fill="#ffffff"/>
+<circle cx="150" cy="330" r="26" fill="#f59e0b"/><rect x="140" y="292" width="20" height="16" rx="4" fill="#c27803"/>
+<circle cx="500" cy="320" r="20" fill="#0ea5a5"/>
+</svg>
